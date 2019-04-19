@@ -1,9 +1,8 @@
-const MongoClient = require('mongodb').MongoClient;
+const mongoose = require('mongoose')
 
 class Mongo {
   constructor() {
     // Database Name
-    this.dbName = 'myproject';
     // Create a new MongoClient
     this.client = null
   }
@@ -11,10 +10,8 @@ class Mongo {
   async connect(url) {
     // Use connect method to connect to the Server
     try {
-      this.client = await MongoClient.connect(url);
       console.log("Connected successfully to server");
-
-      this.db = this.client.db(this.dbName);
+      return mongoose.connect(url);
     } catch (err) {
       throw err;
     }
