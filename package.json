@@ -1,0 +1,25 @@
+{
+  "name": "hexa-arch-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rest": "node framework/rest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrwan/hexa-arch-example.git"
+  },
+  "author": "Rodrigo Fuenzalida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrwan/hexa-arch-example/issues"
+  },
+  "homepage": "https://github.com/rodrwan/hexa-arch-example#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3"
+  }
+}
